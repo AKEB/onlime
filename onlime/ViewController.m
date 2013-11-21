@@ -136,10 +136,21 @@
 				localNotif5.timeZone = [NSTimeZone defaultTimeZone];
 				localNotif5.alertBody = [NSString stringWithFormat:@"Осталось 5 дней до блокировки аккаунта"];
 				localNotif5.soundName = UILocalNotificationDefaultSoundName;
-				localNotif5.applicationIconBadgeNumber = 1;
+				localNotif5.applicationIconBadgeNumber = 5;
 				[[UIApplication sharedApplication] scheduleLocalNotification:localNotif5];
 			}
-			
+			if (day >= 4) {
+				NSDate *date4 = [NSDate dateWithTimeIntervalSinceNow:(day*86400) -4*86400 + 5*60];
+				NSLog(@"Push 4 = %@",[date4 description]);
+				
+				UILocalNotification *localNotif4 = [[UILocalNotification alloc] init];
+				localNotif4.fireDate = date4;
+				localNotif4.timeZone = [NSTimeZone defaultTimeZone];
+				localNotif4.alertBody = [NSString stringWithFormat:@""];
+				localNotif4.soundName = UILocalNotificationDefaultSoundName;
+				localNotif4.applicationIconBadgeNumber = 4;
+				[[UIApplication sharedApplication] scheduleLocalNotification:localNotif4];
+			}
 			if (day >= 3) {
 				NSDate *date3 = [NSDate dateWithTimeIntervalSinceNow:(day*86400) -3*86400 + 5*60];
 				NSLog(@"Push 3 = %@",[date3 description]);
@@ -147,10 +158,22 @@
 				UILocalNotification *localNotif3 = [[UILocalNotification alloc] init];
 				localNotif3.fireDate = date3;
 				localNotif3.timeZone = [NSTimeZone defaultTimeZone];
-				localNotif3.alertBody = [NSString stringWithFormat:@"Осталось 3 дней до блокировки аккаунта"];
+				localNotif3.alertBody = [NSString stringWithFormat:@"Осталось 3 дня до блокировки аккаунта"];
 				localNotif3.soundName = UILocalNotificationDefaultSoundName;
-				localNotif3.applicationIconBadgeNumber = 1;
+				localNotif3.applicationIconBadgeNumber = 3;
 				[[UIApplication sharedApplication] scheduleLocalNotification:localNotif3];
+			}
+			if (day >= 2) {
+				NSDate *date2 = [NSDate dateWithTimeIntervalSinceNow:(day*86400) -2*86400 + 5*60];
+				NSLog(@"Push 2 = %@",[date2 description]);
+				
+				UILocalNotification *localNotif2 = [[UILocalNotification alloc] init];
+				localNotif2.fireDate = date2;
+				localNotif2.timeZone = [NSTimeZone defaultTimeZone];
+				localNotif2.alertBody = [NSString stringWithFormat:@""];
+				localNotif2.soundName = UILocalNotificationDefaultSoundName;
+				localNotif2.applicationIconBadgeNumber = 2;
+				[[UIApplication sharedApplication] scheduleLocalNotification:localNotif2];
 			}
 			
 			if (day >= 1) {
@@ -160,7 +183,7 @@
 				UILocalNotification *localNotif1 = [[UILocalNotification alloc] init];
 				localNotif1.fireDate = date1;
 				localNotif1.timeZone = [NSTimeZone defaultTimeZone];
-				localNotif1.alertBody = [NSString stringWithFormat:@"Осталось 1 дней до блокировки аккаунта"];
+				localNotif1.alertBody = [NSString stringWithFormat:@"Остался 1 день до блокировки аккаунта"];
 				localNotif1.soundName = UILocalNotificationDefaultSoundName;
 				localNotif1.applicationIconBadgeNumber = 1;
 				[[UIApplication sharedApplication] scheduleLocalNotification:localNotif1];
