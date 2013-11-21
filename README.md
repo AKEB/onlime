@@ -2,9 +2,10 @@
 
 ### Test
 
-'''
-	Select * FROM TEST;
-	
-'''
+##Пример использования##
+
+    Select * FROM TEST;
+    
+    
 
 Test text!
