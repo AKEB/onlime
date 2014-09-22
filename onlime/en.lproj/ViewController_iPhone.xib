@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <objects>
@@ -63,7 +64,7 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="450">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="450">
                     <rect key="frame" x="125" y="76" width="175" height="19"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="175" id="490"/>
@@ -81,7 +82,7 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="461">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="461">
                     <rect key="frame" x="175" y="103" width="125" height="22"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="125" id="495"/>
@@ -99,16 +100,6 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="529">
-                    <rect key="frame" x="137" y="267" width="163" height="22"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="22" id="550"/>
-                        <constraint firstAttribute="width" constant="163" id="557"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="19"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Бонусный счет:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="558">
                     <rect key="frame" x="20" y="327" width="138" height="22"/>
                     <constraints>
@@ -119,7 +110,7 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="559">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="559">
                     <rect key="frame" x="159" y="327" width="141" height="22"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="141" id="597"/>
@@ -137,11 +128,21 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="497">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="497">
                     <rect key="frame" x="98" y="171" width="202" height="22"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="202" id="523"/>
                         <constraint firstAttribute="height" constant="22" id="527"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="19"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="529">
+                    <rect key="frame" x="209" y="245" width="91" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="550"/>
+                        <constraint firstAttribute="width" constant="91" id="557"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="19"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -175,7 +176,7 @@
                 <constraint firstItem="496" firstAttribute="top" secondItem="394" secondAttribute="top" constant="170" id="620"/>
                 <constraint firstItem="450" firstAttribute="top" secondItem="443" secondAttribute="top" id="621"/>
                 <constraint firstItem="443" firstAttribute="top" secondItem="394" secondAttribute="top" constant="76" id="623"/>
-                <constraint firstItem="529" firstAttribute="bottom" secondItem="528" secondAttribute="bottom" id="632"/>
+                <constraint firstItem="529" firstAttribute="bottom" secondItem="528" secondAttribute="bottom" constant="-22" id="632"/>
                 <constraint firstItem="559" firstAttribute="bottom" secondItem="558" secondAttribute="bottom" id="633"/>
                 <constraint firstItem="634" firstAttribute="bottom" secondItem="432" secondAttribute="bottom" id="639"/>
                 <constraint firstItem="634" firstAttribute="leading" secondItem="394" secondAttribute="leading" constant="20" symbolic="YES" id="641"/>

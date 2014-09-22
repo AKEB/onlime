@@ -101,7 +101,7 @@
 			lock = [NSString stringWithFormat:@"%@",[obj objectForKey:@"lock"]];
 		}
 		
-		NSString *_balance = [NSString stringWithFormat:@"%@ руб.",[obj objectForKey:@"balance"]];
+		NSString *_balance = [NSString stringWithFormat:@"%@ руб",[obj objectForKey:@"balance"]];
 		
 		NSURL *url = [[[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.akeb.onlime"] URLByAppendingPathComponent:@"settings.dict"];
 		

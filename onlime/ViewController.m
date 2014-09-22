@@ -125,9 +125,9 @@
 
 		[_contract setText:[NSString stringWithFormat:@"%@",[obj objectForKey:@"contract"]]];
 		[_account setText:[NSString stringWithFormat:@"%@",[obj objectForKey:@"account"]]];
-		[_balance setText:[NSString stringWithFormat:@"%@ руб.",[obj objectForKey:@"balance"]]];
+		[_balance setText:[NSString stringWithFormat:@"%@ руб",[obj objectForKey:@"balance"]]];
 		[_lock setText:[NSString stringWithFormat:@"%@",lock]];
-		[_points setText:[NSString stringWithFormat:@"%@ баллов.",[obj objectForKey:@"points"]]];
+		[_points setText:[NSString stringWithFormat:@"%@ баллов",[obj objectForKey:@"points"]]];
 		
 		NSURL *url = [[[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.akeb.onlime"] URLByAppendingPathComponent:@"settings.dict"];
 		NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
