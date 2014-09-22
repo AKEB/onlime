@@ -18,6 +18,11 @@
 
 
 -(void) loginViewShow:(NSString *) error {
+	
+	NSURL *url_settings = [[[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.akeb.onlime"] URLByAppendingPathComponent:@"settings.dict"];
+	NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"", @"balance", @"", @"days", @"", @"userLogin", @"", @"userPassword", nil];
+	[dict writeToURL:url_settings atomically:YES];
+
 	[_loginError setText:error];
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	NSString *userLogin = [defaults objectForKey:@"userLogin"];
@@ -53,6 +58,11 @@
 	NSString *userLogin = [defaults objectForKey:@"userLogin"];
 	NSString *userPassword = [defaults objectForKey:@"userPassword"];
 	
+	NSURL *url_settings = [[[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.akeb.onlime"] URLByAppendingPathComponent:@"settings.dict"];
+	NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"", @"balance", @"", @"days", userLogin, @"userLogin", userPassword, @"userPassword", nil];
+	[dict writeToURL:url_settings atomically:YES];
+	
+	
 	if ([userLogin length] < 1 || [userPassword length] < 1) {
 		[self loginViewShow:nil];
 		
@@ -71,7 +81,6 @@
 	NSLog(@"Request failed:\r\n%@",[[theRequest error] localizedDescription]);
 	
 	[self loginViewShow:@"Ошибка подключения к серверу!"];
-	
 }
 
 - (void)uploadFinishedLogin:(MRGSASIHTTPRequest *)theRequest {
@@ -85,8 +94,6 @@
 	[request setDidFailSelector:@selector(uploadFailedCabinet:)];
 	[request setDidFinishSelector:@selector(uploadFinishedCabinet:)];
 	[request startAsynchronous];
-	
-	
 	
 }
 
@@ -121,10 +128,19 @@
 		[_balance setText:[NSString stringWithFormat:@"%@ руб.",[obj objectForKey:@"balance"]]];
 		[_lock setText:[NSString stringWithFormat:@"%@",lock]];
 		[_points setText:[NSString stringWithFormat:@"%@ баллов.",[obj objectForKey:@"points"]]];
-
+		
+		NSURL *url = [[[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.akeb.onlime"] URLByAppendingPathComponent:@"settings.dict"];
+		NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+		NSString *userLogin = [defaults objectForKey:@"userLogin"];
+		NSString *userPassword = [defaults objectForKey:@"userPassword"];
+		
+		NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:[_balance text], @"balance", lock, @"days", userLogin, @"userLogin", userPassword, @"userPassword",[NSDate date],@"date", nil];
+		[dict writeToURL:url atomically:YES];
+		
+		NSLog(@"URL = %@",[url description]);
 		
 		
-		int day = [[obj objectForKey:@"lock"] integerValue];
+		long day = [[obj objectForKey:@"lock"] integerValue];
 		
 		if (day < 600) {
 			if (day >= 5) {
@@ -309,6 +325,7 @@
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	[defaults setObject:[_loginName text] forKey:@"userLogin"];
 	[defaults setObject:[_loginPassword text] forKey:@"userPassword"];
+	[defaults synchronize];
 	
 	[self loginViewHide];
 	
@@ -327,9 +344,14 @@
 	[request setResponseEncoding:NSUTF8StringEncoding];
 	[request setTimeOutSeconds:30];
 	[request startAsynchronous];
+	
+	NSURL *url_settings = [[[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.akeb.onlime"] URLByAppendingPathComponent:@"settings.dict"];
+	NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"", @"balance", @"", @"days", @"", @"userLogin", @"", @"userPassword", nil];
+	[dict writeToURL:url_settings atomically:YES];
 
 	[self detailViewHide];
 	[self loginViewShow:nil];
+	
 	
 }
 

@@ -23,7 +23,6 @@
 		D1211EE01654E38700A0F9C9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1211EDF1654E38700A0F9C9 /* libz.dylib */; };
 		D1211EE21654E60200A0F9C9 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1211EE11654E60200A0F9C9 /* libxml2.dylib */; };
 		D1211EE41654E60600A0F9C9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1211EE31654E60600A0F9C9 /* CoreTelephony.framework */; };
-		D1211EE61654E60B00A0F9C9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1211EE51654E60B00A0F9C9 /* StoreKit.framework */; };
 		D1211EE81654E61E00A0F9C9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1211EE71654E61E00A0F9C9 /* CoreFoundation.framework */; };
 		D1211EEA1654E63B00A0F9C9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1211EE91654E63A00A0F9C9 /* MapKit.framework */; };
 		D1211EEE1654E64400A0F9C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1211EED1654E64400A0F9C9 /* CoreLocation.framework */; };
@@ -58,8 +57,70 @@
 		D13D94D5183E31B500FE9B02 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D13D94C8183E31B500FE9B02 /* Default.png */; };
 		D13D94D6183E31B500FE9B02 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D13D94C9183E31B500FE9B02 /* Default@2x.png */; };
 		D15D97CA1763B4E6008DA15A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15D97C91763B4E6008DA15A /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		D1FD232816598EA800490EC3 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1FD232716598EA800490EC3 /* libTestFlight.a */; };
+		D1ABC8AB19D016E900353B3E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1ABC8AA19D016E900353B3E /* NotificationCenter.framework */; };
+		D1ABC8B119D016E900353B3E /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1ABC8B019D016E900353B3E /* TodayViewController.m */; };
+		D1ABC8B319D016E900353B3E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1ABC8B219D016E900353B3E /* MainInterface.storyboard */; };
+		D1ABC8B619D016E900353B3E /* Onlime.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D1ABC8A919D016E900353B3E /* Onlime.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D1ABC8BD19D02A0300353B3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1211E031654DDA000A0F9C9 /* Foundation.framework */; };
+		D1ABC8C019D0534900353B3E /* MRGSJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D1211F001654FA1400A0F9C9 /* MRGSJsonBase.m */; };
+		D1ABC8C119D0534900353B3E /* MRGSJSONLIB.m in Sources */ = {isa = PBXBuildFile; fileRef = D1211F021654FA1500A0F9C9 /* MRGSJSONLIB.m */; };
+		D1ABC8C219D0534900353B3E /* MRGSJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D1211F041654FA1600A0F9C9 /* MRGSJsonParser.m */; };
+		D1ABC8C319D0534900353B3E /* MRGSJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = D1211F061654FA1700A0F9C9 /* MRGSJsonWriter.m */; };
+		D1ABC8C419D0534900353B3E /* MRGSJson.m in Sources */ = {isa = PBXBuildFile; fileRef = D1211EFD1654F9D900A0F9C9 /* MRGSJson.m */; };
+		D1ABC8C519D0534900353B3E /* MRGSASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = D1211ECB1654E33B00A0F9C9 /* MRGSASIAuthenticationDialog.m */; };
+		D1ABC8C619D0534900353B3E /* MRGSASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = D1211ECE1654E33B00A0F9C9 /* MRGSASIDataCompressor.m */; };
+		D1ABC8C719D0534900353B3E /* MRGSASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = D1211ED01654E33B00A0F9C9 /* MRGSASIDataDecompressor.m */; };
+		D1ABC8C819D0534900353B3E /* MRGSASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D1211ED21654E33C00A0F9C9 /* MRGSASIDownloadCache.m */; };
+		D1ABC8C919D0534900353B3E /* MRGSASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D1211ED41654E33C00A0F9C9 /* MRGSASIFormDataRequest.m */; };
+		D1ABC8CA19D0534900353B3E /* MRGSASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D1211ED61654E33C00A0F9C9 /* MRGSASIHTTPRequest.m */; };
+		D1ABC8CB19D0534900353B3E /* MRGSASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = D1211EDA1654E33C00A0F9C9 /* MRGSASIInputStream.m */; };
+		D1ABC8CC19D0534900353B3E /* MRGSASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D1211EDC1654E33C00A0F9C9 /* MRGSASINetworkQueue.m */; };
+		D1ABC8CD19D0534900353B3E /* MRGSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D1211EC91654E33B00A0F9C9 /* MRGSReachability.m */; };
+		D1ABC8CE19D0537200353B3E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1211EED1654E64400A0F9C9 /* CoreLocation.framework */; };
+		D1ABC8CF19D0537700353B3E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1211EE31654E60600A0F9C9 /* CoreTelephony.framework */; };
+		D1ABC8D019D0537D00353B3E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D15D97C91763B4E6008DA15A /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D1ABC8D119D0538900353B3E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1211EE71654E61E00A0F9C9 /* CoreFoundation.framework */; };
+		D1ABC8D219D0538E00353B3E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1211EE91654E63A00A0F9C9 /* MapKit.framework */; };
+		D1ABC8D319D0539700353B3E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1211EDF1654E38700A0F9C9 /* libz.dylib */; };
+		D1ABC8D419D0539D00353B3E /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1211EE11654E60200A0F9C9 /* libxml2.dylib */; };
+		D1ABC8D519D053AB00353B3E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1211E051654DDA000A0F9C9 /* CoreGraphics.framework */; };
+		D1ABC8D619D053AF00353B3E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1211EB51654DE9A00A0F9C9 /* CFNetwork.framework */; };
+		D1ABC8D719D053B900353B3E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1211EB61654DE9A00A0F9C9 /* MobileCoreServices.framework */; };
+		D1ABC8D819D053BE00353B3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1211E011654DDA000A0F9C9 /* UIKit.framework */; };
+		D1ABC8D919D053C800353B3E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1211EB71654DE9A00A0F9C9 /* Security.framework */; };
+		D1ABC8DA19D053D000353B3E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1211EB81654DE9A00A0F9C9 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1ABC8B419D016E900353B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1211DF41654DDA000A0F9C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1ABC8A819D016E900353B3E;
+			remoteInfo = Onlime;
+		};
+		D1ABC8B719D016E900353B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1211DF41654DDA000A0F9C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1ABC8A819D016E900353B3E;
+			remoteInfo = Onlime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D1ABC8BC19D016E900353B3E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D1ABC8B619D016E900353B3E /* Onlime.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D1211DFD1654DDA000A0F9C9 /* onlime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onlime.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +166,6 @@
 		D1211EDF1654E38700A0F9C9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D1211EE11654E60200A0F9C9 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		D1211EE31654E60600A0F9C9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		D1211EE51654E60B00A0F9C9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D1211EE71654E61E00A0F9C9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		D1211EE91654E63A00A0F9C9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D1211EED1654E64400A0F9C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -139,6 +199,14 @@
 		D13D94C9183E31B500FE9B02 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D14DA0B2176B198600DB085C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D15D97C91763B4E6008DA15A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		D1ABC8A919D016E900353B3E /* Onlime.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Onlime.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1ABC8AA19D016E900353B3E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		D1ABC8AE19D016E900353B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1ABC8AF19D016E900353B3E /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		D1ABC8B019D016E900353B3E /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		D1ABC8B219D016E900353B3E /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		D1ABC8BE19D02A4F00353B3E /* Onlime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Onlime.entitlements; sourceTree = "<group>"; };
+		D1ABC8BF19D02A6800353B3E /* onlime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = onlime.entitlements; sourceTree = "<group>"; };
 		D1FD232616598EA800490EC3 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		D1FD232716598EA800490EC3 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,7 +221,6 @@
 				D1211EEE1654E64400A0F9C9 /* CoreLocation.framework in Frameworks */,
 				D1211EEA1654E63B00A0F9C9 /* MapKit.framework in Frameworks */,
 				D1211EE81654E61E00A0F9C9 /* CoreFoundation.framework in Frameworks */,
-				D1211EE61654E60B00A0F9C9 /* StoreKit.framework in Frameworks */,
 				D1211EE01654E38700A0F9C9 /* libz.dylib in Frameworks */,
 				D1211EE21654E60200A0F9C9 /* libxml2.dylib in Frameworks */,
 				D1211E021654DDA000A0F9C9 /* UIKit.framework in Frameworks */,
@@ -163,7 +230,28 @@
 				D1211EBC1654DE9A00A0F9C9 /* MobileCoreServices.framework in Frameworks */,
 				D1211EBD1654DE9A00A0F9C9 /* Security.framework in Frameworks */,
 				D1211EBE1654DE9A00A0F9C9 /* SystemConfiguration.framework in Frameworks */,
-				D1FD232816598EA800490EC3 /* libTestFlight.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1ABC8A619D016E900353B3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1ABC8DA19D053D000353B3E /* SystemConfiguration.framework in Frameworks */,
+				D1ABC8D919D053C800353B3E /* Security.framework in Frameworks */,
+				D1ABC8D819D053BE00353B3E /* UIKit.framework in Frameworks */,
+				D1ABC8D719D053B900353B3E /* MobileCoreServices.framework in Frameworks */,
+				D1ABC8D619D053AF00353B3E /* CFNetwork.framework in Frameworks */,
+				D1ABC8D519D053AB00353B3E /* CoreGraphics.framework in Frameworks */,
+				D1ABC8D419D0539D00353B3E /* libxml2.dylib in Frameworks */,
+				D1ABC8D319D0539700353B3E /* libz.dylib in Frameworks */,
+				D1ABC8D219D0538E00353B3E /* MapKit.framework in Frameworks */,
+				D1ABC8D119D0538900353B3E /* CoreFoundation.framework in Frameworks */,
+				D1ABC8D019D0537D00353B3E /* AdSupport.framework in Frameworks */,
+				D1ABC8CF19D0537700353B3E /* CoreTelephony.framework in Frameworks */,
+				D1ABC8CE19D0537200353B3E /* CoreLocation.framework in Frameworks */,
+				D1ABC8BD19D02A0300353B3E /* Foundation.framework in Frameworks */,
+				D1ABC8AB19D016E900353B3E /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +282,7 @@
 				D1211F1A1654FE4C00A0F9C9 /* iTunesArtwork */,
 				D1211E2F1654DE4200A0F9C9 /* Classes */,
 				D1211E071654DDA000A0F9C9 /* onlime */,
+				D1ABC8AC19D016E900353B3E /* Onlime */,
 				D1211E001654DDA000A0F9C9 /* Frameworks */,
 				D1211DFE1654DDA000A0F9C9 /* Products */,
 			);
@@ -203,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				D1211DFD1654DDA000A0F9C9 /* onlime.app */,
+				D1ABC8A919D016E900353B3E /* Onlime.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,7 +306,6 @@
 				D1211EED1654E64400A0F9C9 /* CoreLocation.framework */,
 				D1211EE91654E63A00A0F9C9 /* MapKit.framework */,
 				D1211EE71654E61E00A0F9C9 /* CoreFoundation.framework */,
-				D1211EE51654E60B00A0F9C9 /* StoreKit.framework */,
 				D1211EE31654E60600A0F9C9 /* CoreTelephony.framework */,
 				D15D97C91763B4E6008DA15A /* AdSupport.framework */,
 				D1211EB51654DE9A00A0F9C9 /* CFNetwork.framework */,
@@ -226,6 +315,7 @@
 				D1211E011654DDA000A0F9C9 /* UIKit.framework */,
 				D1211E031654DDA000A0F9C9 /* Foundation.framework */,
 				D1211E051654DDA000A0F9C9 /* CoreGraphics.framework */,
+				D1ABC8AA19D016E900353B3E /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -233,6 +323,7 @@
 		D1211E071654DDA000A0F9C9 /* onlime */ = {
 			isa = PBXGroup;
 			children = (
+				D1ABC8BF19D02A6800353B3E /* onlime.entitlements */,
 				D1211EF11654E79700A0F9C9 /* strict.xcconfig */,
 				D1211E101654DDA000A0F9C9 /* AppDelegate.h */,
 				D1211E111654DDA000A0F9C9 /* AppDelegate.m */,
@@ -295,6 +386,26 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		D1ABC8AC19D016E900353B3E /* Onlime */ = {
+			isa = PBXGroup;
+			children = (
+				D1ABC8BE19D02A4F00353B3E /* Onlime.entitlements */,
+				D1ABC8AF19D016E900353B3E /* TodayViewController.h */,
+				D1ABC8B019D016E900353B3E /* TodayViewController.m */,
+				D1ABC8B219D016E900353B3E /* MainInterface.storyboard */,
+				D1ABC8AD19D016E900353B3E /* Supporting Files */,
+			);
+			path = Onlime;
+			sourceTree = "<group>";
+		};
+		D1ABC8AD19D016E900353B3E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1ABC8AE19D016E900353B3E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -305,15 +416,35 @@
 				D1211DF91654DDA000A0F9C9 /* Sources */,
 				D1211DFA1654DDA000A0F9C9 /* Frameworks */,
 				D1211DFB1654DDA000A0F9C9 /* Resources */,
+				D1ABC8BC19D016E900353B3E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D1ABC8B519D016E900353B3E /* PBXTargetDependency */,
+				D1ABC8B819D016E900353B3E /* PBXTargetDependency */,
 			);
 			name = onlime;
 			productName = onlime;
 			productReference = D1211DFD1654DDA000A0F9C9 /* onlime.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D1ABC8A819D016E900353B3E /* Onlime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1ABC8B919D016E900353B3E /* Build configuration list for PBXNativeTarget "Onlime" */;
+			buildPhases = (
+				D1ABC8A519D016E900353B3E /* Sources */,
+				D1ABC8A619D016E900353B3E /* Frameworks */,
+				D1ABC8A719D016E900353B3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Onlime;
+			productName = Onlime;
+			productReference = D1ABC8A919D016E900353B3E /* Onlime.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -326,6 +457,26 @@
 				TargetAttributes = {
 					D1211DFC1654DDA000A0F9C9 = {
 						DevelopmentTeam = 2DP9NNA24K;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					D1ABC8A819D016E900353B3E = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 2DP9NNA24K;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -342,6 +493,7 @@
 			projectRoot = "";
 			targets = (
 				D1211DFC1654DDA000A0F9C9 /* onlime */,
+				D1ABC8A819D016E900353B3E /* Onlime */,
 			);
 		};
 /* End PBXProject section */
@@ -373,6 +525,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D1ABC8A719D016E900353B3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1ABC8B319D016E900353B3E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -400,7 +560,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D1ABC8A519D016E900353B3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1ABC8C419D0534900353B3E /* MRGSJson.m in Sources */,
+				D1ABC8C119D0534900353B3E /* MRGSJSONLIB.m in Sources */,
+				D1ABC8C519D0534900353B3E /* MRGSASIAuthenticationDialog.m in Sources */,
+				D1ABC8C819D0534900353B3E /* MRGSASIDownloadCache.m in Sources */,
+				D1ABC8B119D016E900353B3E /* TodayViewController.m in Sources */,
+				D1ABC8C019D0534900353B3E /* MRGSJsonBase.m in Sources */,
+				D1ABC8CD19D0534900353B3E /* MRGSReachability.m in Sources */,
+				D1ABC8CA19D0534900353B3E /* MRGSASIHTTPRequest.m in Sources */,
+				D1ABC8CC19D0534900353B3E /* MRGSASINetworkQueue.m in Sources */,
+				D1ABC8C219D0534900353B3E /* MRGSJsonParser.m in Sources */,
+				D1ABC8C719D0534900353B3E /* MRGSASIDataDecompressor.m in Sources */,
+				D1ABC8CB19D0534900353B3E /* MRGSASIInputStream.m in Sources */,
+				D1ABC8C919D0534900353B3E /* MRGSASIFormDataRequest.m in Sources */,
+				D1ABC8C319D0534900353B3E /* MRGSJsonWriter.m in Sources */,
+				D1ABC8C619D0534900353B3E /* MRGSASIDataCompressor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1ABC8B519D016E900353B3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1ABC8A819D016E900353B3E /* Onlime */;
+			targetProxy = D1ABC8B419D016E900353B3E /* PBXContainerItemProxy */;
+		};
+		D1ABC8B819D016E900353B3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1ABC8A819D016E900353B3E /* Onlime */;
+			targetProxy = D1ABC8B719D016E900353B3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D1211E0A1654DDA000A0F9C9 /* InfoPlist.strings */ = {
@@ -485,6 +680,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = onlime/onlime.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -498,9 +694,8 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "armv7 armv7s i386";
+				VALID_ARCHS = "armv7 armv7s i386 arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -510,8 +705,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Vadim Babajanyan (2DP9NNA24K)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Vadim Babajanyan (2DP9NNA24K)";
+				CODE_SIGN_ENTITLEMENTS = onlime/onlime.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "onlime/onlime-Prefix.pch";
 				INFOPLIST_FILE = "onlime/onlime-Info.plist";
@@ -522,11 +718,77 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "AF56FBE9-AFD5-4F63-A18D-97AAAA86A036";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AF56FBE9-AFD5-4F63-A18D-97AAAA86A036";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "armv7 armv7s i386";
+				VALID_ARCHS = "armv7 armv7s i386 arm64";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D1ABC8BA19D016E900353B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = Onlime/Onlime.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = Onlime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D1ABC8BB19D016E900353B3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = Onlime/Onlime.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = Onlime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -550,6 +812,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D1ABC8B919D016E900353B3E /* Build configuration list for PBXNativeTarget "Onlime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1ABC8BA19D016E900353B3E /* Debug */,
+				D1ABC8BB19D016E900353B3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

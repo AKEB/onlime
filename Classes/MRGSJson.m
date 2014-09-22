@@ -11,16 +11,6 @@
 #import "MRGSJSONLIB.h"
 
 #pragma mark -
-#pragma mark Private headers
-
-@interface MRGSJson (Private)
-
--(void) dealloc;
-
-@end
-
-
-#pragma mark -
 #pragma mark Public methods
 
 @implementation MRGSJson
@@ -32,12 +22,12 @@
 }
 
 +(id)objectWithString:(NSString *)string {
-    MRGSJsonParser *parser = [[[MRGSJsonParser alloc] init] autorelease];
+    MRGSJsonParser *parser = [[MRGSJsonParser alloc] init];
     return [parser objectWithString:string];
 }
 
 +(id)stringWithObject:(id)object {
-    MRGSJsonWriter *writer = [[[MRGSJsonWriter alloc] init] autorelease];
+    MRGSJsonWriter *writer = [[MRGSJsonWriter alloc] init];
 	return [writer stringWithObject:object];
 }
 
@@ -50,18 +40,3 @@
 }
 
 @end
-
-#pragma mark -
-#pragma mark Private methods
-
-@implementation MRGSJson (Private)
-
--(void)dealloc {
-	[super dealloc];
-}
-
-@end
-
-
-
-

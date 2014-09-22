@@ -9,8 +9,6 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
-#import "TestFlight.h"
-
 
 @implementation AppDelegate
 
@@ -25,13 +23,6 @@
 {
 	
 	[UIApplication sharedApplication].applicationIconBadgeNumber = 0;
-	
-	
-	[TestFlight takeOff:@"69084474c839eff033f50a709e72ff04_MzcyODgyMDExLTEwLTI3IDExOjA5OjI3LjkwNjgzMw"];
-	
-	//#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
-		//[TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
-	//#endif
 	
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
