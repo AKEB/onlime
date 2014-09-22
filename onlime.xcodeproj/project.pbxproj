@@ -211,8 +211,6 @@
 		D1ABC8B219D016E900353B3E /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		D1ABC8BE19D02A4F00353B3E /* Onlime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Onlime.entitlements; sourceTree = "<group>"; };
 		D1ABC8BF19D02A6800353B3E /* onlime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = onlime.entitlements; sourceTree = "<group>"; };
-		D1FD232616598EA800490EC3 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
-		D1FD232716598EA800490EC3 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,8 +279,6 @@
 				D13D94C7183E31B500FE9B02 /* Icon.png */,
 				D13D94C8183E31B500FE9B02 /* Default.png */,
 				D13D94C9183E31B500FE9B02 /* Default@2x.png */,
-				D1FD232616598EA800490EC3 /* TestFlight.h */,
-				D1FD232716598EA800490EC3 /* libTestFlight.a */,
 				D1211F271655028100A0F9C9 /* logo.png */,
 				D1211F191654FE4C00A0F9C9 /* iTunesArtwork@2x */,
 				D1211F1A1654FE4C00A0F9C9 /* iTunesArtwork */,
