@@ -29,7 +29,7 @@
 	
 	NSDictionary *dict = [NSDictionary dictionaryWithContentsOfURL:url];
 	
-	if (dict != nil && [[dict objectForKey:@"date"] timeIntervalSince1970]+30 > [[NSDate date] timeIntervalSince1970]) {
+	if (dict != nil && [[dict objectForKey:@"date"] timeIntervalSince1970]+1*60*60 > [[NSDate date] timeIntervalSince1970]) {
 		Days.text = [dict objectForKey:@"days"];
 		Balance.text = [dict objectForKey:@"balance"];
 	} else if (dict == nil) {
