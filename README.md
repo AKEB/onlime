@@ -1,11 +1,3 @@
-# This is my README
+#Onlime Balance
 
-### Test
-
-##Пример использования##
-
-    Select * FROM TEST;
-    
-    
-
-Test text!
+Это приложение показывает баланс счета Onlime

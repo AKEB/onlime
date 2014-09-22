@@ -43,6 +43,8 @@
 		D1211F231654FE4C00A0F9C9 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = D1211F191654FE4C00A0F9C9 /* iTunesArtwork@2x */; };
 		D1211F241654FE4C00A0F9C9 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = D1211F1A1654FE4C00A0F9C9 /* iTunesArtwork */; };
 		D1211F281655028100A0F9C9 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D1211F271655028100A0F9C9 /* logo.png */; };
+		D13458C619D05E8F00A6659F /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D13458C519D05E8F00A6659F /* Icon-60@3x.png */; };
+		D13458C819D05F0700A6659F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D13458C719D05F0700A6659F /* Images.xcassets */; };
 		D13D94CA183E31B500FE9B02 /* Icon-Small-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D13D94BD183E31B500FE9B02 /* Icon-Small-40@2x.png */; };
 		D13D94CB183E31B500FE9B02 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D13D94BE183E31B500FE9B02 /* Icon-60@2x.png */; };
 		D13D94CC183E31B500FE9B02 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D13D94BF183E31B500FE9B02 /* Default-568h@2x.png */; };
@@ -184,6 +186,9 @@
 		D1211F191654FE4C00A0F9C9 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
 		D1211F1A1654FE4C00A0F9C9 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		D1211F271655028100A0F9C9 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		D13458C419D05C9000A6659F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D13458C519D05E8F00A6659F /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		D13458C719D05F0700A6659F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D13D94BD183E31B500FE9B02 /* Icon-Small-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-40@2x.png"; sourceTree = "<group>"; };
 		D13D94BE183E31B500FE9B02 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 		D13D94BF183E31B500FE9B02 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -197,7 +202,6 @@
 		D13D94C7183E31B500FE9B02 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		D13D94C8183E31B500FE9B02 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		D13D94C9183E31B500FE9B02 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		D14DA0B2176B198600DB085C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D15D97C91763B4E6008DA15A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		D1ABC8A919D016E900353B3E /* Onlime.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Onlime.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1ABC8AA19D016E900353B3E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
@@ -261,6 +265,9 @@
 		D1211DF21654DDA000A0F9C9 = {
 			isa = PBXGroup;
 			children = (
+				D13458C719D05F0700A6659F /* Images.xcassets */,
+				D13458C519D05E8F00A6659F /* Icon-60@3x.png */,
+				D13458C419D05C9000A6659F /* README.md */,
 				D13D94BD183E31B500FE9B02 /* Icon-Small-40@2x.png */,
 				D13D94BE183E31B500FE9B02 /* Icon-60@2x.png */,
 				D13D94BF183E31B500FE9B02 /* Default-568h@2x.png */,
@@ -274,7 +281,6 @@
 				D13D94C7183E31B500FE9B02 /* Icon.png */,
 				D13D94C8183E31B500FE9B02 /* Default.png */,
 				D13D94C9183E31B500FE9B02 /* Default@2x.png */,
-				D14DA0B2176B198600DB085C /* Images.xcassets */,
 				D1FD232616598EA800490EC3 /* TestFlight.h */,
 				D1FD232716598EA800490EC3 /* libTestFlight.a */,
 				D1211F271655028100A0F9C9 /* logo.png */,
@@ -512,6 +518,7 @@
 				D13D94D0183E31B500FE9B02 /* Icon-Small.png in Resources */,
 				D13D94CC183E31B500FE9B02 /* Default-568h@2x.png in Resources */,
 				D1211E211654DDA000A0F9C9 /* ViewController_iPad.xib in Resources */,
+				D13458C819D05F0700A6659F /* Images.xcassets in Resources */,
 				D13D94CE183E31B500FE9B02 /* Icon@2x.png in Resources */,
 				D13D94CA183E31B500FE9B02 /* Icon-Small-40@2x.png in Resources */,
 				D1211F231654FE4C00A0F9C9 /* iTunesArtwork@2x in Resources */,
@@ -519,6 +526,7 @@
 				D1211F241654FE4C00A0F9C9 /* iTunesArtwork in Resources */,
 				D13D94CF183E31B500FE9B02 /* Icon-Small@2x.png in Resources */,
 				D13D94D2183E31B500FE9B02 /* Icon-Small-50.png in Resources */,
+				D13458C619D05E8F00A6659F /* Icon-60@3x.png in Resources */,
 				D13D94D6183E31B500FE9B02 /* Default@2x.png in Resources */,
 				D1211F281655028100A0F9C9 /* logo.png in Resources */,
 				D13D94CB183E31B500FE9B02 /* Icon-60@2x.png in Resources */,
@@ -682,7 +690,6 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = onlime/onlime.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "onlime/onlime-Prefix.pch";
 				INFOPLIST_FILE = "onlime/onlime-Info.plist";
@@ -706,8 +713,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = onlime/onlime.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "onlime/onlime-Prefix.pch";
 				INFOPLIST_FILE = "onlime/onlime-Info.plist";
@@ -728,6 +734,8 @@
 		D1ABC8BA19D016E900353B3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -739,7 +747,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_ENTITLEMENTS = Onlime/Onlime.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -763,6 +770,8 @@
 		D1ABC8BB19D016E900353B3E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -773,8 +782,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_ENTITLEMENTS = Onlime/Onlime.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -820,6 +828,7 @@
 				D1ABC8BB19D016E900353B3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
