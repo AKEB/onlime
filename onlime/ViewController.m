@@ -84,9 +84,31 @@
 }
 
 - (void)uploadFinishedLogin:(MRGSASIHTTPRequest *)theRequest {
+	NSLog(@"uploadFinishedLogin %@",[[theRequest error] localizedDescription]);
+	NSLog(@"uploadFinishedLogin %@",[theRequest responseString]);
+	NSRange r1=[[theRequest responseString] rangeOfString:@"var wtf = '" options:NSBackwardsSearch&&NSCaseInsensitiveSearch];
+	NSRange r2=[[theRequest responseString] rangeOfString:@"', account = " options:NSBackwardsSearch&&NSCaseInsensitiveSearch];
+	//NSRange r3=[[theRequest responseString] rangeOfString:@";</script><div id=\"blank\"></div>" options:NSBackwardsSearch&&NSCaseInsensitiveSearch];
+	NSString *wtf;
+	if(r1.location==NSNotFound || r2.location==NSNotFound) {
+		return [self uploadFailedLogin:theRequest];
+	} else {
+		wtf = [[theRequest responseString] substringWithRange:NSMakeRange(r1.location+r1.length, r2.location-r1.location-r1.length)];
+		
+		NSLog(@"wtf=%@",wtf);
+		//NSString *account = [[theRequest responseString] substringWithRange:NSMakeRange(r2.location+r2.length, r3.location-r2.location-r2.length)];
+		//NSLog(@"account=%@",account);
+	}
+	
 	NSURL *url = [NSURL URLWithString:@"https://my.onlime.ru/json/cabinet"];
 	MRGSASIFormDataRequest *request = [MRGSASIFormDataRequest requestWithURL:url];
-	[request addRequestHeader:@"User-Agent" value:@"Mozilla/4.0"];
+	[request addRequestHeader:@"User-Agent" value:@"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1"];
+	
+	[request addRequestHeader:@"X-Request" value:@"JSON"];
+	[request addRequestHeader:@"X-Requested-With" value:@"XMLHttpRequest"];
+	[request addRequestHeader:@"x-insight" value:@"activate"];
+	[request addRequestHeader:@"X-Wtf" value:wtf];
+	
 	[request setTimeOutSeconds:30];
 	[request setResponseEncoding:NSUTF8StringEncoding];
 	[request setTimeOutSeconds:30];
@@ -305,14 +327,15 @@
 
 
 -(void) tryLogin:(NSString *) login andPassword:(NSString *) password {
+	NSLog(@"tryLogin");
 	NSURL *url = [NSURL URLWithString:@"https://my.onlime.ru/session/login"];
 	MRGSASIFormDataRequest *request = [MRGSASIFormDataRequest requestWithURL:url];
-	[request addRequestHeader:@"User-Agent" value:@"Mozilla/4.0"];
+	[request addRequestHeader:@"User-Agent" value:@"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1"];
 	[request setTimeOutSeconds:30];
 	[request setResponseEncoding:NSUTF8StringEncoding];
 	[request setPostValue:login forKey:@"login_credentials[login]"];
 	[request setPostValue:password forKey:@"login_credentials[password]"];
-	[request setPostValue:@"commit" forKey:@"submit"];
+	[request setPostValue:@"on!" forKey:@"submit"];
 	[request setTimeOutSeconds:30];
 	[request setDelegate:self];
 	[request setDidFailSelector:@selector(uploadFailedLogin:)];
@@ -339,7 +362,7 @@
 	
 	NSURL *url = [NSURL URLWithString:@"https://my.onlime.ru/session/logout"];
 	MRGSASIFormDataRequest *request = [MRGSASIFormDataRequest requestWithURL:url];
-	[request addRequestHeader:@"User-Agent" value:@"Mozilla/4.0"];
+	[request addRequestHeader:@"User-Agent" value:@"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1"];
 	[request setTimeOutSeconds:30];
 	[request setResponseEncoding:NSUTF8StringEncoding];
 	[request setTimeOutSeconds:30];
